@@ -22,7 +22,7 @@
             "Yoozi\\Weixin\\": "src/"
         }
     },
-    "target-dir": "Yoozi\\Weixin",
+    "target-dir": "Yoozi/Weixin",
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
