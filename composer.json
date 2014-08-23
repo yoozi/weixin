@@ -1,0 +1,32 @@
+{
+    "name": "yoozi/weixin",
+    "description": "PHP library for interacting with weixin api.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "hbc",
+            "email": "bcxxxxxx@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "rmccue/requests": ">=1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers"
+        ],
+        "psr-0": {
+            "Yoozi\\Weixin\\": "src/"
+        }
+    },
+    "target-dir": "Yoozi/Weixin",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
