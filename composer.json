@@ -19,7 +19,7 @@
             "src/controllers"
         ],
         "psr-0": {
-            "Yoozi\\Weixin\\": "src/"
+            "Yoozi\\Weixin\\": "src/Yoozi/Weixin"
         }
     },
     "target-dir": "Yoozi/Weixin",
