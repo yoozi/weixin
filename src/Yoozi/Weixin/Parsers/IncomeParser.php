@@ -25,7 +25,7 @@ class IncomeParser
         // Convert all keys to lowercase.
         $rv = array();
         foreach ($array as $k => $v) {
-            $rv[strtolower($k)] = $v;
+            $rv[strtolower($k)] = trim($v);
         }
 
         return $rv;
