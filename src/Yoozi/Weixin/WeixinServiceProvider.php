@@ -1,6 +1,10 @@
 <?php namespace Yoozi\Weixin;
 
+use App;
+use Config;
 use Illuminate\Support\ServiceProvider;
+
+use Yoozi\Weixin\Client\WeixinClient;
 
 class WeixinServiceProvider extends ServiceProvider
 {
