@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Yoozi\Weixin\Client\WeixinClient
+ * @see \Yoozi\Weixin\Client\OAuthClient
  */
-class WeixinClient extends Facade
+class OAuthClient extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -14,6 +14,6 @@ class WeixinClient extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Yoozi\Weixin\Client\WeixinClient';
+        return 'Yoozi\Weixin\Client\OAuthClient';
     }
 }

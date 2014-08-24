@@ -7,7 +7,7 @@
  * @author      hbc <bcxxxxxx@gmail.com>
  * @copyright   2014 yoozi.cn
  */
-interface WeixinClientInterface
+interface OAuthClientInterface
 {
     /**
      * Setup client app id & secret.

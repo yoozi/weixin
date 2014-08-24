@@ -9,7 +9,7 @@ use Requests;
  * @author      hbc <bcxxxxxx@gmail.com>
  * @copyright   2014 yoozi.cn
  */
-class WeixinClient implements WeixinClientInterface
+class OAuthClient implements OAuthClientInterface
 {
     /**
      * Weixin authorize url.

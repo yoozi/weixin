@@ -4,7 +4,7 @@ use App;
 use Config;
 use Illuminate\Support\ServiceProvider;
 
-use Yoozi\Weixin\Client\WeixinClient;
+use Yoozi\Weixin\Client\OAuthClient;
 
 class WeixinServiceProvider extends ServiceProvider
 {
@@ -46,9 +46,9 @@ class WeixinServiceProvider extends ServiceProvider
             $this->app->bind($prefix . $name, $prefix . $impl);
         }
 
-        $this->app->bind('Yoozi\Weixin\Client\WeixinClient', function() {
+        $this->app->bind('Yoozi\Weixin\Client\OAuthClient', function() {
             // Setup weixin client from config.
-            $client = new WeixinClient;
+            $client = new OAuthClient;
 
             $appId = Config::get('weixin::weixin.app_id');
             $appSecret = Config::get('weixin::weixin.app_secret');
