@@ -80,7 +80,7 @@ class WeixinRouter implements WeixinRouterInterface
     public function getCallback($pattern)
     {
         while (!is_null($pattern)) {
-            if ($this->has($pattern)) {
+            if ($this->hasCallback($pattern)) {
                 return $this->callbacks[$pattern];
             }
 
@@ -88,7 +88,7 @@ class WeixinRouter implements WeixinRouterInterface
             $pattern = PatternParser::downGrade($pattern);
         }
 
-        if ($this->has($this->defaultEventPattern)) {
+        if ($this->hasCallback($this->defaultEventPattern)) {
             return $this->callbacks[$this->defaultEventPattern];
         }
 

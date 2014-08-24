@@ -56,7 +56,7 @@ class WeixinController extends \BaseController
 
         // Find handler.
         $pattern = PatternParser::parse($income);
-        $routeString = WeixinRouter::find($pattern);
+        $routeString = WeixinRouter::getCallback($pattern);
         if (!$routeString) {
             return $this->missingEvent();
         }
