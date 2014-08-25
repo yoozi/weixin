@@ -140,7 +140,7 @@ WeixinRouter::bindView('http://google.com', 'MyWeixinEventHandler@visitGoogle');
 WeixinRouter::bindDefault('MyWeixinEventHandler@defaultEvent');
 ```
 
-In `MyWeixinEventHandler`:
+In `MyWeixinEventHandler.php`:
 
 ```php
 class MyWeixinEventHandler
@@ -169,7 +169,7 @@ Weixin client can be used to:
 
 Example:
 
-```
+```php
 // Notes:
 //  You should store this access token in the cache or somewhere else
 //  for reuse later.
