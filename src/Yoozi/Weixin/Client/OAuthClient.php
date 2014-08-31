@@ -72,13 +72,14 @@ class OAuthClient implements OAuthClientInterface
     /**
      * {@inheritdoc}
      */
-    public function getAuthorizeUrl($redirectUrl)
+    public function getAuthorizeUrl($redirectUrl, $state = '')
     {
         $query = http_build_query(array(
             'appid' => $this->appId,
-            'redirect_uri' => $redirectUrl,
+            'scope' => $this->authScope,
             'response_type' => 'code',
-            'scope' => $this->authScope
+            'redirect_uri' => $redirectUrl,
+            'state' => $state
         ));
 
         return $this->authUrl . '?' . $query . '#wechat_redirect';

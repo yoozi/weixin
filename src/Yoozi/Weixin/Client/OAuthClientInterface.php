@@ -22,9 +22,10 @@ interface OAuthClientInterface
      *
      * @link http://mp.weixin.qq.com/wiki/index.php?title=网页授权获取用户基本信息
      * @param string $redirectUrl
+     * @param string $state
      * @return string
      */
-    public function getAuthorizeUrl($redirectUrl);
+    public function getAuthorizeUrl($redirectUrl, $state = '');
 
     /**
      * Get access token & open id from code.
