@@ -76,9 +76,9 @@ class OAuthClient implements OAuthClientInterface
     {
         $query = http_build_query(array(
             'appid' => $this->appId,
-            'scope' => $this->authScope,
-            'response_type' => 'code',
             'redirect_uri' => $redirectUrl,
+            'response_type' => 'code',
+            'scope' => $this->authScope,
             'state' => $state
         ));
 
