@@ -14,13 +14,15 @@ class TextMessage implements MessageInterface
      */
     public static function make(array $data)
     {
+        $content = trim($data['content']);
+
         return <<< XML
             <xml>
                 <ToUserName><![CDATA[{$data['receiver']}]]></ToUserName>
                 <FromUserName><![CDATA[{$data['sender']}]]></FromUserName>
                 <CreateTime>{$data['createTime']}</CreateTime>
                 <MsgType><![CDATA[text]]></MsgType>
-                <Content><![CDATA[{$data['content']}]]></Content>
+                <Content><![CDATA[{$content}]]></Content>
             </xml>
 XML;
     }
