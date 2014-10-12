@@ -58,7 +58,7 @@ class WeixinRouter implements WeixinRouterInterface
     public function bindClick($buttonKey, $routeString)
     {
         $this->bindEvent(
-            $this->buildPattern(array('click', $pattern)),
+            $this->buildPattern(array('click', $buttonKey)),
             $routeString
         );
     }
@@ -69,7 +69,7 @@ class WeixinRouter implements WeixinRouterInterface
     public function bindView($url, $routeString)
     {
         $this->bindEvent(
-            $this->buildPattern(array('view', $pattern)),
+            $this->buildPattern(array('view', $url)),
             $routeString
         );
     }
