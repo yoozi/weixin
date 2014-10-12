@@ -25,6 +25,11 @@ class IncomeParser
         // Convert all keys to lowercase.
         $rv = array();
         foreach ($array as $k => $v) {
+            // subscribe/unsubscribe's ``EventKey`` is an empty list.
+            if (is_array($v))
+            {
+                continue;
+            }
             $rv[strtolower($k)] = trim($v);
         }
 
