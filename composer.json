@@ -22,7 +22,7 @@
             "Yoozi\\Weixin\\": "src/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"

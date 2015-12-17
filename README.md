@@ -1,5 +1,7 @@
 # Weixin [WIP]
 
+## This library is deprecated and not maintained, use [overtrue/wechat](https://github.com/overtrue/wechat) instead.
+
 > This library is part of [Project Golem](http://golem.yoozi.cn/), see [yoozi/golem](https://github.com/yoozi/golem) for more info.
 
 Weixin is a [Laravel](http://laravel.com) [package](http://laravel.com/docs/packages) for interacting with [微信公众平台](https://mp.weixin.qq.com).
